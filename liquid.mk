@@ -24,7 +24,9 @@ $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
 export TARGET_DEVICE := taimen
 export LIQUID_BUILDTYPE=RELEASE
-
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="slothdabski"
+    
 # Override AOSP build properties
 PRODUCT_NAME := liquid_taimen
 PRODUCT_DEVICE := taimen
